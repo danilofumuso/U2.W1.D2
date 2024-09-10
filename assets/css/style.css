@@ -6,6 +6,7 @@ body {
   padding: 15px;
   background-image: url("../img/sfondo.png");
   background-position: center center;
+  padding-top: 4rem;
 }
 
 * {
@@ -27,6 +28,9 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0px;
+  z-index: 900;
 }
 
 @media screen and (min-width: 800px) {
@@ -451,8 +455,8 @@ footer a {
 .social {
   width: 55px;
   aspect-ratio: 1/1;
-  background-color: transparent;
-  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.451);
+  border: 2px solid white;
   border-radius: 10px;
   text-align: center;
   position: fixed;
@@ -470,8 +474,8 @@ footer a {
 .calendar {
   width: 55px;
   aspect-ratio: 1/1;
-  background-color: transparent;
-  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.451);
+  border: 2px solid white;
   border-radius: 10px;
   text-align: center;
   position: fixed;
@@ -489,9 +493,8 @@ footer a {
 .back-top {
   width: 55px;
   aspect-ratio: 1/1;
-  background-color: transparent;
-
-  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.451);
+  border: 2px solid white;
   border-radius: 10px;
   text-align: center;
   position: fixed;
@@ -504,4 +507,29 @@ footer a {
   padding-top: 12px;
   font-size: 28px;
   color: #d35f5f;
+}
+
+@media screen and (min-width: 1200px) {
+  .calendar {
+    top: 20px;
+    bottom: initial;
+    right: 20px;
+  }
+
+  .social {
+    top: 90px;
+    bottom: initial;
+  }
+}
+
+aside div {
+  position: relative;
+}
+
+aside a + i {
+  font-size: 60px;
+  color: #c6c1c1c5;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
